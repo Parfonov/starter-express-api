@@ -5,6 +5,7 @@ app.all('/', (req, res) => {
     res.send('Yo!')
 });
 app.post('/gptRequest', (req, res) => {
+	let req.body.Answer = "";
 	req.body.Answer = "Проверка.";
 	res.status(200).send(req.body);
 });
