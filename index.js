@@ -5,6 +5,6 @@ app.all('/', (req, res) => {
     res.send('Yo!')
 });
 app.post('/gptRequest', (req, res) => {
-	res.status(200).send("Проверка!");
+	res.status(200).send(req.body);
 });
 app.listen(process.env.PORT || 3000)
