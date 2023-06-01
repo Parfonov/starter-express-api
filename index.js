@@ -1,5 +1,4 @@
 const express = require('express')
-const sync = require('sync-request')
 const app = express()
 
 app.all('/', (req, res) => {
